@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React from "react";
+import {Link} from 'react-router-dom';
 import { useState, useEffect } from "react";
 // import logo from "./public/logo.png";
 
@@ -53,35 +54,36 @@ const Navbar = () => {
             }`}
           >
             <li>
-              <a
-                href="#home"
+              <a 
                 className="text-white hover:text-pink-400 transition duration-300"
               >
-                Home
+              <Link to="/">
+              Home
+              </Link>  
               </a>
             </li>
             <li>
               <a
-                href="#submit-paper"
+                
                 className="text-white hover:text-pink-400 transition duration-300"
               >
-                Submit Paper
+               <Link to="/submitpaper"> Submit Paper</Link>
               </a>
             </li>
             <li>
               <a
-                href="#about"
+                
                 className="text-white hover:text-pink-400 transition duration-300"
               >
-                About
+               <Link to="/about" >About</Link> 
               </a>
             </li>
             <li>
               <a
-                href="#contact-us"
+                
                 className="text-white hover:text-pink-400 transition duration-300"
               >
-                Contact Us
+               <Link to="contact" >Contact Us</Link> 
               </a>
             </li>
             <div
