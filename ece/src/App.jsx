@@ -12,13 +12,14 @@ function App() {
     // Simulate a network request or some async operation
     setTimeout(() => {
       setLoading(false);
-    }, 3000); // Example delay
+    }, 3000);
+  });
+  // Example delay
   return (
     <div>
       {loading ? (
         <Spinner />
       ) : (
-
         <div className="">
           <img src="./col-img2.jpg" className="absolute z-[-1] w-full" />
           <AboveNav />
