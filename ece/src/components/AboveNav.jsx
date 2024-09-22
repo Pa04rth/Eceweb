@@ -21,19 +21,14 @@ const AboveNav = () => {
 
   return (
     <div
-      className={`w-full py-4 px-10 transition-all duration-300 bg-gradient-to-b from-gray-400 via-satate-200 to-gray-100  " ${
-        isScrolled ? "bg-violet-950" : "bg-transparent"
-      }`}
+      className={`w-full py-4 px-10 transition-all duration-300  " ${
+        isScrolled ? "display-none" : "absolute bg-transparent"
+      } transition-colors mb-10 z-20`}
     >
       <div className="flex justify-between items-center">
         {/* Left Section with Logo and Heading */}
         <div className="flex items-center">
-          <img src="logo.png" alt="Logo" className="w-16 h-16" />
-          <div className="text-white font-bold text-xl font-sans ml-4">
-            <h1 className="leading-tight">
-              Kamla Nehru Institute of Technology, <br /> Sultanpur
-            </h1>
-          </div>
+          <img src="./logo1.png" alt="Logo" className="" />
         </div>
 
         {/* Right Section with Location */}
@@ -49,7 +44,7 @@ const AboveNav = () => {
               href="https://maps.app.goo.gl/gGQN6tQXQ5YFVtiKA"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline "
             >
               Kamla Nehru Institute of Technology, Sultanpur
             </a>
