@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
-import Venue from "./components/Venue";
 import Footer from "./components/Footer";
 import "./App.css";
 
