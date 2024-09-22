@@ -1,11 +1,20 @@
 import { useState, useEffect } from "react";
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { useGSAP } from '@gsap/react';
 import Spinner from "./components/Spinner";
 import Navbar from "./components/Navbar";
 import AboveNav from "./components/AboveNav";
 
+import Router from "./routes/Router";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
+
+
 import Footer from "./components/Footer";
 import "./App.css";
-
 function App() {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -70,6 +79,8 @@ function App() {
           <Footer className=" mt-10" />
         </div>
       )}
+      <Router/>
+      
     </div>
   );
 }
