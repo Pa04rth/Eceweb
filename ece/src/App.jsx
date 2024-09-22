@@ -1,11 +1,20 @@
 import { useState, useEffect } from "react";
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { useGSAP } from '@gsap/react';
 import Spinner from "./components/Spinner";
 import Navbar from "./components/Navbar";
 import AboveNav from "./components/AboveNav";
 
+import Router from "./routes/Router";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
+
+
 import Footer from "./components/Footer";
 import "./App.css";
-
 function App() {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -32,13 +41,16 @@ function App() {
           >
             <div className="carousel-inner ">
               <div className="carousel-item active">
-                <img src="./crousel1-2.jpg" class="d-block  w-100 " alt="..." />
+                <img src="./crousel3.jpg" class="d-block  w-100 " alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="./crousel2-2.jpg" class="d-block w-100" alt="..." />
+                <img src="./clg.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="./crousel3-3.jpg" class="d-block w-100" alt="..." />
+                <img src="./crousel3.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="./crousel1-2.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
             <button
@@ -70,6 +82,8 @@ function App() {
           <Footer className=" mt-10" />
         </div>
       )}
+      <Router/>
+      
     </div>
   );
 }
