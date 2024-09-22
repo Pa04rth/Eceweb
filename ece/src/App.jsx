@@ -41,13 +41,16 @@ function App() {
           >
             <div className="carousel-inner ">
               <div className="carousel-item active">
-                <img src="./crousel1-2.jpg" class="d-block  w-100 " alt="..." />
+                <img src="./crousel3.jpg" class="d-block  w-100 " alt="..." />
               </div>
               <div className="carousel-item">
-                <img src="./crousel2-2.jpg" class="d-block w-100" alt="..." />
+                <img src="./clg.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="./crousel3-3.jpg" class="d-block w-100" alt="..." />
+                <img src="./crousel3.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="./crousel1-2.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
             <button
