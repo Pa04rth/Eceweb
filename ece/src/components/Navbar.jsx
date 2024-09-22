@@ -85,7 +85,7 @@ const Navbar = () => {
                 
                 className="text-white hover:text-pink-400 transition duration-300"
               >
-               <Link to="contact" >Contact Us</Link> 
+               <Link to="/contact" >Contact Us</Link> 
               </a>
             </li>
             <div

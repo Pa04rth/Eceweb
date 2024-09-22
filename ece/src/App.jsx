@@ -75,11 +75,12 @@ function App() {
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <Router/>
 
           <Footer className=" mt-10" />
         </div>
       )}
-      <Router/>
+      
       
     </div>
   );

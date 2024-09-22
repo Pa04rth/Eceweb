@@ -73,7 +73,9 @@ export default function Home() {
         </div>
       </section> */}
       <section className="panel dark">ONE</section>
-      <section className="panel purple">TWO</section>
+      <section className="panel purple">
+           <div>PAPER SUBMISSION & GUIDE LINES</div> 
+      </section>
       <section className="panel orange">THREE</section>
       <section className="panel red">FOUR</section>
     </main>
