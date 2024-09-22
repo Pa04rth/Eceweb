@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <footer className="bg-blue-950 text-white py-4 flex flex- h-96">
         <div className="container mx-auto flex justify-between items-center  ">
           {/* Left side: Logo */}
