@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
+import Venue from "./components/Venue";
+import Footer from "./components/Footer";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import AboveNav from "./components/AboveNav";
@@ -11,14 +13,13 @@ function App() {
     // Simulate a network request or some async operation
     setTimeout(() => {
       setLoading(false);
-    }, 1000); // Example delay
-  }, []);
-
+    }, 3000); // Example delay
   return (
     <div>
       {loading ? (
         <Spinner />
       ) : (
+
         <div className="">
           <img src="./col-img2.jpg" className="absolute z-[-1] w-full" />
           <AboveNav />
