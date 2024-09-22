@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
+import Venue from "./components/Venue";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -10,7 +12,7 @@ function App() {
     // Simulate a network request or some async operation
     setTimeout(() => {
       setLoading(false);
-    }, 5000); // Example delay
+    }, 3000); // Example delay
   }, []);
 
   return (
@@ -20,6 +22,8 @@ function App() {
       ) : (
         <div>
           <h1>Hello all</h1>
+
+          <Footer />
         </div>
       )}
     </div>
