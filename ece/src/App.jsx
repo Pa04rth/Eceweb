@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Spinner from "./components/Spinner";
 import "./App.css";
-
+import Navbar from "./components/Navbar";
+import AboveNav from "./components/AboveNav";
 function App() {
   const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -10,7 +11,7 @@ function App() {
     // Simulate a network request or some async operation
     setTimeout(() => {
       setLoading(false);
-    }, 5000); // Example delay
+    }, 1000); // Example delay
   }, []);
 
   return (
@@ -18,8 +19,10 @@ function App() {
       {loading ? (
         <Spinner />
       ) : (
-        <div>
-          <h1>Hello all</h1>
+        <div className="">
+          <img src="./col-img2.jpg" className="absolute z-[-1] w-full" />
+          <AboveNav />
+          <Navbar />
         </div>
       )}
     </div>
