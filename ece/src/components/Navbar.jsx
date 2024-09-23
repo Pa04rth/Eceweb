@@ -124,14 +124,14 @@ const Navbar = () => {
     <div
       className={`w-full  ${
         isScrolled
-          ? "fixed bg-blue-950 top-0 h-20"
-          : "absolute bg-transparent mt-28 mx-32 "
+          ? "fixed bg-blue-950 text-center top-0 h-20 mr-72 py-4"
+          : "absolute bg-transparent mt-36 h-20  "
       } transition-colors duration-600 ease-in-out z-20`}
     >
-      <nav className="p-4  ">
+      <nav className="  ">
         {/* Logo */}
         <div
-          className={`flex absolute p-4 rounded-full ml-[100px] ${
+          className={`flex absolute p-3 rounded-full ml-[100px] ${
             isScrolled
               ? "bg-blue-950 opacity-100 transition-opacity duration-600 ease-in-out"
               : "bg-transparent opacity-0"
@@ -140,14 +140,14 @@ const Navbar = () => {
           <img
             src="./logo.png"
             alt="Logo"
-            className="  object-contain rounded-full mt-10"
+            className="  object-contain rounded-full mt-1"
           />
         </div>
 
         {/* Navigation Links */}
         <div className="container flex justify-center font-custom">
           <div
-            className={`flex items-center gap-8 p-4 rounded-full ${
+            className={`flex items-center gap-8 px-8 py-2  rounded-full ${
               isScrolled
                 ? "opacity-100 transition-opacity duration-500 ease-out"
                 : "bg-blue-950 opacity-100 transition-opacity duration-500 ease-in-out"
