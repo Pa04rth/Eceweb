@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['"TitilliumWeb-Regular"', "sans-serif"], // Define your custom font family
+      },
       keyframes: {
         fade: {
           "0%": { opacity: "0" },

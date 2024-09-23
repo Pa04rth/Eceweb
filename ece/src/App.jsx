@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-import { useGSAP } from '@gsap/react';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useGSAP } from "@gsap/react";
 import Spinner from "./components/Spinner";
 import Navbar from "./components/Navbar";
 import AboveNav from "./components/AboveNav";
@@ -11,7 +11,6 @@ import AboveNav from "./components/AboveNav";
 import Router from "./routes/Router";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
-
 
 import Footer from "./components/Footer";
 import "./App.css";
@@ -34,6 +33,7 @@ function App() {
         <div>
           <AboveNav className="" />
           <Navbar />
+
           <div
             id="carouselExampleAutoplaying"
             className="carousel slide  h-screen  z-[0] "
@@ -41,16 +41,16 @@ function App() {
           >
             <div className="carousel-inner ">
               <div className="carousel-item active">
-                <img src="./crousel3.jpg" class="d-block  w-100 " alt="..." />
+                <img src="./crousel3-2.jpg" class="d-block  w-100 " alt="..." />
               </div>
               <div className="carousel-item">
                 <img src="./clg.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="./crousel3.jpg" class="d-block w-100" alt="..." />
+                <img src="./crousel1.jpg" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img src="./crousel1-2.jpg" class="d-block w-100" alt="..." />
+                <img src="./crousel4.jpg" class="d-block w-100" alt="..." />
               </div>
             </div>
             <button
@@ -78,12 +78,14 @@ function App() {
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          {/* THE DIVIDER */}
+
+          {/* ROUTER */}
+          <Router />
 
           <Footer className=" mt-10" />
         </div>
       )}
-      <Router/>
-      
     </div>
   );
 }
