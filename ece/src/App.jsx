@@ -7,6 +7,8 @@ import { useGSAP } from "@gsap/react";
 import Spinner from "./components/Spinner";
 import Navbar from "./components/Navbar";
 import AboveNav from "./components/AboveNav";
+import Heading from "./components/Heading";
+import PhotoGallery from "./components/PhotoGallery";
 
 import Router from "./routes/Router";
 
@@ -33,6 +35,7 @@ function App() {
         <div>
           <AboveNav className="" />
           <Navbar />
+          <Heading className="z-20 top-0" />
 
           <div
             id="carouselExampleAutoplaying"
@@ -82,7 +85,8 @@ function App() {
 
           {/* ROUTER */}
           <Router />
-
+          <PhotoGallery />
+          <img src="./sunset1.png" />
           <Footer className=" mt-10" />
         </div>
       )}

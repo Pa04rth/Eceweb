@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['"TitilliumWeb-Regular"', "sans-serif"], // Define your custom font family
+        custom: ["Titillium Web", "system - ui"], // Define your custom font family
       },
       keyframes: {
         fade: {
