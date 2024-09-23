@@ -1,13 +1,10 @@
+@import "./assets/font.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 html,
 body {
-  background-color: var(--dark);
   color: var(--light);
   margin: 0;
   height: 100%;
