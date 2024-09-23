@@ -84,14 +84,14 @@ export default function Home() {
               ></path>
             </svg>
           </div>
-          <div className="h-10 font-custom   ">
-            <h1 className="text-black   text-4xl  ">About The Conference</h1>
+          <div className="h-10    ">
+            <h1 className="text-black  font-bold text-4xl font-custom ">
+              ORGANISERS
+            </h1>
             <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
           </div>
-          <div className="flex felx-row  flex-grow items-center justify-center">
-            <div className="h-80 w-2/3 items-center justify-center text-center border-r-4 border-dotted border-black">
-              <h1 className="font-bold">DATA</h1>
-            </div>
+          <div className="flex felx-row  flex-grow justify-center mt-10 ">
+            {/* PART-1 */}
             <div className="items-center gap-2  mt-4 ml-2 flex flex-col">
               {/* CARD 1 */}
               <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
@@ -103,11 +103,127 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <div class="text-xl  text-black font-bold">
+                  <div class="text-xl w-72  text-red-950 font-bold">
+                    Prof. J. P. Pandey
+                  </div>
+                  <p class="text-gray-500 text-center">
+                    <h1 className="font-bold text-black">Chief Patron</h1>
+                    <hr className="border-t-2 border-black  " />
+                    <h2 className="">Vice Chancellor, AKTU Lucknow</h2>
+                  </p>
+                </div>
+              </div>
+
+              {/* CARD 2 */}
+              <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="..."
+                    alt="Profile Photo"
+                  />
+                </div>
+                <div>
+                  <div class="text-xl text-red-950  font-bold">
+                    Prof. A. K. Chauhan
+                  </div>
+                  <p class="text-gray-500 text-center">
+                    <h1 className="font-bold text-black">Convenor</h1>
+                    <hr className="border-t-2 border-black  " />
+                    <h2 className="">
+                      Associate Professor, Mechanical Engineering
+                    </h2>
+                  </p>
+                </div>
+              </div>
+              {/* CARD 3 */}
+              <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="..."
+                    alt="Profile Photo"
+                  />
+                </div>
+                <div>
+                  <div class="text-xl text-red-950  font-bold">
+                    Prof. Ruchin Agrawal
+                  </div>
+                  <p class="text-gray-500 text-center">
+                    <h1 className="font-bold text-black">
+                      Organizing Secretory
+                    </h1>
+                    <hr className="border-t-2 border-black  " />
+                    <h2 className="">Associate Professor, Civil Engineering</h2>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* PART 2 */}
+            <div className="items-center gap-2  mt-4 ml-2 flex flex-col">
+              {/* CARD 1 */}
+              <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="..."
+                    alt="Profile Photo"
+                  />
+                </div>
+                <div className="w-72">
+                  <div class="text-xl  text-red-950 font-bold">
+                    Prof. R.K. Uppadhay
+                  </div>
+                  <p class="text-gray-500 text-center">
+                    <h1 className="font-bold text-black">Patron</h1>
+                    <hr className="border-t-2 border-black  " />
+                    <h2 className="">Director, KNIT, Sultanpur</h2>
+                  </p>
+                </div>
+              </div>
+              <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="..."
+                    alt="Profile Photo"
+                  />
+                </div>
+                <div>
+                  <div class="text-xl text-red-950  font-bold">
+                    Prof. Rajneesh Singh
+                  </div>
+                  <p class="text-gray-500 text-center">
+                    <h1 className="font-bold text-black">
+                      Organizing Secretory
+                    </h1>
+                    <hr className="border-t-2 border-black  " />
+                    <h2 className="">
+                      Associate Professor, Mechanical Engineering
+                    </h2>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* PART 3 */}
+            <div className="items-center gap-2  mt-4 ml-2 flex flex-col">
+              {/* CARD 1 */}
+              <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img
+                    class="h-12 w-12 rounded-full"
+                    src="..."
+                    alt="Profile Photo"
+                  />
+                </div>
+                <div>
+                  <div class="text-xl text-red-950 font-bold">
                     Dr. Harsh Vikram Singh
                   </div>
                   <p class="text-gray-500 text-center">
-                    <h1 className="font-bold">Coordinator</h1>
+                    <h1 className="font-bold text-black">Coordinator</h1>
                     <hr className="border-t-2 border-black  " />
                     <h2 className="">
                       Professor & Head of Electronics Engineering Department
@@ -131,20 +247,17 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <div class="text-xl  text-black font-bold">
+                  <div class="text-xl  text-red-950 font-bold">
                     Dr. Som Pal Gangwar
                   </div>
                   <p class="text-gray-500 text-center">
-                    <h1 className="font-bold">Co-Coordinator</h1>
+                    <h1 className="font-bold text-black">Co-Coordinator</h1>
                     <hr className="border-t-2 border-black  " />
                     <h2 className="">
                       Associate Professor, Electronics Engineering Department
                     </h2>
                     <br />
                     <h1 className="text-left font-bold">Mobile: 8765890822</h1>
-                    <h1 className="text-left font-bold">
-                      Email: sompalgangwar@knit.ac.in
-                    </h1>
                   </p>
                 </div>
               </div>
@@ -173,12 +286,83 @@ export default function Home() {
           </div>
           <div className="h-10 border-b-4 border-solid border-red-500">
             <h1 className="text-black  font-bold text-4xl font-mono ">
-              Paper Submission
+              PAPER SUBMISSION
             </h1>
           </div>
           <div className="flex felx-row  flex-grow ">
-            <div className="h-full  w-2/3 items-center justify-center text-center border-r-4 border-dotted border-black">
-              <h1 className="font-bold">DATA</h1>
+            <div className="h-full font-semibold w-2/3 items-center justify-center text-center   border-black">
+              <h1 className="bg-blue-500 flex justify-center items-center text-white font-bold p-2 mx-2 my-4  rounded  ">
+                PAPER SUBMISSION GUIDELINES
+              </h1>
+              <h2
+                className="p-1 m-1 flex justify-start text-start
+              "
+              >
+                1. Full Text Manuscripts (limited to 6-pages) should be
+                submitted by one of the authors of the manuscript either through
+                e-mail OR through Easy Chair . Only PDF (*.pdf) / Word
+                (*.doc/.docx) files will be considered for review
+              </h2>
+              <h2 className="p-2 m-1 flex justify-start text-start">
+                2. Full text paper submissions will be peer-reviewed by the
+                members of the Technical Committee & Editorial Board to assess
+                their quality and relevance in 1st stage. The reviewers'
+                recommendations will be final and binding.
+              </h2>
+              <h2 className="p-1 m-1 flex justify-start text-start">
+                3. Hard bound full length paper proceedings with ISSN number
+                will be provided to all the registered candidates (in 1st stage)
+                along with the certificate and conference kit.
+              </h2>
+              <h2 className="p-1 m-1 flex justify-start text-start">
+                4. Some of selected papers will be published in Scopus/Web of
+                Science conference series after 2 nd stage review.
+              </h2>
+              <h2 className="p-1 m-1 flex justify-start text-start">
+                5. Two papers with substantial quality contribution from the
+                authors will be selected for the BEST PAPER AWARD, to be given
+                in the conference
+              </h2>
+              <h2 className="p-1 m-1 flex justify-start ">
+                6. Conference will be organized in hybrid mode (Online/Offline)
+              </h2>
+            </div>
+            <div className="w-1/3 ">
+              <div class="container mx-auto p-4">
+                <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                  <div class="px-6 py-4">
+                    <button class="text-l bg-red-950 font-bold mb-4 text-center text-white px-3 py-1 m-1">
+                      Important Dates
+                    </button>
+                    <div class="border-t border-gray-300">
+                      <div class="flex justify-between py-2">
+                        <span class="font-semibold">Event</span>
+                        <span class="font-semibold">Date</span>
+                      </div>
+                      <div class="border-t border-gray-200">
+                        <div class="flex justify-between py-2">
+                          <span class="text-gray-700">
+                            Last Date for Paper Submission
+                          </span>
+                          <span class="text-gray-700">Oct 20, 2024</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-t border-gray-200">
+                          <span class="text-gray-700">
+                            Notification for Selection
+                          </span>
+                          <span class="text-gray-700">Nov 10, 2024</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-t border-gray-200">
+                          <span class="text-gray-700">
+                            Last Date for Registration
+                          </span>
+                          <span class="text-gray-700">Nov 20, 2024</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -207,7 +391,7 @@ export default function Home() {
               Speakers
             </h1>
           </div>
-          <div className="flex felx-row  flex-grow border-8 border-yellow-300 "></div>
+          <div className="flex felx-row  flex-grow "></div>
         </div>
       </section>
 

@@ -145,7 +145,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="container flex justify-center font-custom">
+        <div className="container flex justify-center ">
           <div
             className={`flex items-center gap-8 px-8 py-2  rounded-full ${
               isScrolled
@@ -157,7 +157,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-white hover:text-yellow-300 transition duration-300"
+                  className="text-white hover:text-yellow-300 font-custom transition duration-300"
                 >
                   Home
                 </Link>
@@ -165,7 +165,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/submitpaper"
-                  className="text-white hover:text-yellow-300 transition duration-300"
+                  className="text-white hover:text-yellow-300 font-custom transition duration-300"
                 >
                   Submit Paper
                 </Link>
