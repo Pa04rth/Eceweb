@@ -28,7 +28,7 @@ const Spinner = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold  mt-1 text-2xl text-black">
+        <h1 className="font-bold  mt-1 text-2xl text-white">
           KAMLA NEHRU INSTITUTE OF TECHNOLOGY
         </h1>
       </div>

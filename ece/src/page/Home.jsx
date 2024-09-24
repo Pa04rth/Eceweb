@@ -268,34 +268,35 @@ export default function Home() {
 
       {/* SECTION 2 */}
       <section className="panel light">
-        <div className="w-full h-full flex flex-col mt-16 ">
+        <div className="w-full h-full flex flex-col mt-16  ">
           {/* SHAPE DIVIDER */}
-          <div className="custom-shape-divider-top-1727064263 absolute top-0 left-0 w-full overflow-hidden leading-none">
+          <div class="custom-shape-divider-top-1727115564 absolute top-0 left-0 w-full overflow-hidden leading-none">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
-              className="relative block w-[calc(100%+1.3px)] h-[60px] [transform:rotateY(180deg)]"
+              className="relative block w-[calc(100%+1.3px)] h-14"
             >
               <path
-                d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+                d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
                 class="shape-fill fill-[#172554]"
               ></path>
             </svg>
           </div>
-          <div className="h-10 border-b-4 border-solid border-red-500">
-            <h1 className="text-black  font-bold text-4xl font-mono ">
+          <div className="h-10 mt-4">
+            <h1 className="text-black font-bold text-4xl font-custom ">
               PAPER SUBMISSION
             </h1>
+            <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
           </div>
           <div className="flex felx-row  flex-grow ">
-            <div className="h-full font-semibold w-2/3 items-center justify-center text-center   border-black">
-              <h1 className="bg-blue-500 flex justify-center items-center text-white font-bold p-2 mx-2 my-4  rounded  ">
+            <div className="h-full font-semibold w-2/3 items-center justify-center text-center mt-2   border-black">
+              <h1 className="bg-blue-500 font-custom flex justify-center items-center text-white font-bold p-2 mx-2 my-4  rounded  ">
                 PAPER SUBMISSION GUIDELINES
               </h1>
               <h2
-                className="p-1 m-1 flex justify-start text-start
+                className="p-1 m-1 flex justify-start text-start font-custom
               "
               >
                 1. Full Text Manuscripts (limited to 6-pages) should be
@@ -340,8 +341,8 @@ export default function Home() {
                         <span class="font-semibold">Date</span>
                       </div>
                       <div class="border-t border-gray-200">
-                        <div class="flex justify-between py-2">
-                          <span class="text-gray-700">
+                        <div class="flex justify-between  py-2">
+                          <span class="text-gray-700 ">
                             Last Date for Paper Submission
                           </span>
                           <span class="text-gray-700">Oct 20, 2024</span>
@@ -399,27 +400,27 @@ export default function Home() {
       <section className="panel light">
         <div className="w-full h-full flex flex-col mt-16 ">
           {/* SHAPE DIVIDER */}
-          <div className="custom-shape-divider-top-1727064263 absolute top-0 left-0 w-full overflow-hidden leading-none">
+          <div className="custom-shape-divider-top-1727061075 absolute top-0 left-0 w-full overflow-hidden leading-none">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1200 120"
               preserveAspectRatio="none"
-              className="relative block w-[calc(100%+1.3px)] h-[60px] [transform:rotateY(180deg)]"
+              className="relative block w-[calc(100%+1.3px)] h-[131px]"
             >
               <path
-                d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                class="shape-fill fill-[#172554]"
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                className="shape-fill fill-[#172554]"
               ></path>
             </svg>
           </div>
-          <div className="h-10 border-b-4 border-solid border-red-500">
-            <h1 className="text-black  font-bold text-4xl font-mono ">
+          <div className="h-10 ">
+            <h1 className="text-black  font-bold text-4xl font-custom ">
               ABOUT THE CONFERENCE
             </h1>
           </div>
           <div className="flex felx-row  flex-grow ">
-            <div className="h-full  w-2/3 items-center justify-center text-center border-r-4 border-dotted border-black">
+            <div className="h-full  w-2/3 items-center justify-center text-center  ">
               <h1 className="font-bold">DATA</h1>
             </div>
             <div>

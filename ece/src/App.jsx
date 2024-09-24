@@ -86,7 +86,7 @@ function App() {
           {/* ROUTER */}
           <Router />
           <PhotoGallery />
-          <img src="./sunset1.png" />
+
           <Footer className=" mt-10" />
         </div>
       )}

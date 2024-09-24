@@ -40,7 +40,13 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white flex flex-col">
+      <div>
+        <h1 className="text-black font-custom text-4xl font-bold ml-9">
+          PHOTO GALLERY
+        </h1>
+        <span className="relative inline-block ml-9   bottom-0 w-72 h-1 bg-red-900"></span>
+      </div>
       {/* Photo gallery grid */}
       <div className="grid grid-cols-6 gap-2 p-8">
         {photos.map((photo, index) => (
@@ -52,7 +58,7 @@ const PhotoGallery = () => {
             <img
               src={photo}
               alt={`Photo ${index + 1}`}
-              className="w-full h-20 object-cover rounded-md"
+              className="w-full h-28 object-cover rounded-md hover:bg-slate-600"
             />
             <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               🔍
