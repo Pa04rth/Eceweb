@@ -507,6 +507,7 @@ export default function Home() {
           id="carouselExampleAutoplaying"
           className="carousel slide  h-screen  z-[0] "
           data-bs-ride="carousel"
+          data-bs-interval="500"
         >
           <div className="carousel-inner ">
             <div className="carousel-item active">
@@ -573,8 +574,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-16 w-16 rounded-full"
+                      src="./jp.jpg"
                       alt="Profile Photo"
                     />
                   </div>
@@ -616,8 +617,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-16 w-16 rounded-full"
+                      src="./ruchin.jpg"
                       alt="Profile Photo"
                     />
                   </div>
@@ -644,8 +645,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-16 w-16 rounded-full"
+                      src="./director.jpg"
                       alt="Profile Photo"
                     />
                   </div>
@@ -691,8 +692,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-16 w-16 rounded-full"
+                      src="./hvs.jpg"
                       alt="Profile Photo"
                     />
                   </div>
@@ -721,8 +722,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-16 w-16 rounded-full"
+                      src="./spg.jpg"
                       alt="Profile Photo"
                     />
                   </div>
@@ -803,7 +804,9 @@ export default function Home() {
               </svg>
             </div>
             <div>
-              <h1 className="text-black   text-4xl  ">Paper Submission</h1>
+              <h1 className="text-black   text-4xl font-bold ">
+                PAPER SUBMISSION
+              </h1>
               <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
             </div>
             <div className="flex felx-row  flex-grow ">

@@ -12,14 +12,14 @@ const Spinner = () => {
     // Set an interval to cycle through logos
     const intervalId = setInterval(() => {
       setCurrentLogoIndex((prevIndex) => (prevIndex + 1) % logos.length);
-    }, 1000); // Change logo every 1 seconds
+    }, 500); // Change logo every 1 seconds
 
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className="spinner flex flex-col justify-center items-center h-screen bg-[url('')]">
+    <div className="spinner flex flex-col justify-center items-center h-screen bg-white">
       <div className="animate-fade">
         <img
           src={logos[currentLogoIndex]}
@@ -28,7 +28,7 @@ const Spinner = () => {
         />
       </div>
       <div>
-        <h1 className="font-bold  mt-1 text-2xl text-white">
+        <h1 className="font-bold  mt-1 text-2xl text-black">
           KAMLA NEHRU INSTITUTE OF TECHNOLOGY
         </h1>
       </div>

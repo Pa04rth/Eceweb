@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useContext } from "react";
+import { Routes, Route } from "react-router-dom";
 
-import { TransitionProvider } from '../context/TransitionContext';
-import TransitionComponent from '../components/Transition';
-import About from '../page/About';
-import Home from '../page/Home';
-import Submitpaper from '../page/Submitpaper';
-import Contact from '../page/Contact';
+import { TransitionProvider } from "../context/TransitionContext";
+import TransitionComponent from "../components/Transition";
+import About from "../page/About";
+import Home from "../page/Home";
+import Submitpaper from "../page/Submitpaper";
+import Contact from "../page/Contact";
 
 const Router = () => {
   return (
@@ -15,26 +15,28 @@ const Router = () => {
         <Route
           path="/contact"
           element={
-            <TransitionComponent>
-              <Contact />
-            </TransitionComponent>
+            // <TransitionComponent>
+            //   <Contact />
+            // </TransitionComponent>
+            <Contact />
           }
         />
         <Route
           path="/sumbitpaper"
           element={
-            <TransitionComponent>
-              <Submitpaper />
-            </TransitionComponent>
+            // <TransitionComponent>
+            //   <Submitpaper />
+            // </TransitionComponent>
+            <Submitpaper />
           }
         />
-        <Route 
-        path="/about" 
-        element={
-          <TransitionComponent>
+        <Route
+          path="/about"
+          element={
+            <TransitionComponent>
               <About />
             </TransitionComponent>
-        }
+          }
         />
         <Route
           index
