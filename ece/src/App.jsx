@@ -37,7 +37,7 @@ function App() {
           <Navbar />
           <Heading className="z-20 top-0" />
 
-          <div
+          {/* <div
             id="carouselExampleAutoplaying"
             className="carousel slide  h-screen  z-[0] "
             data-bs-ride="carousel"
@@ -80,12 +80,12 @@ function App() {
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+          </div> */}
           {/* THE DIVIDER */}
 
           {/* ROUTER */}
           <Router />
-          <PhotoGallery />
+          {/* <PhotoGallery /> */}
 
           <Footer className=" mt-10" />
         </div>
