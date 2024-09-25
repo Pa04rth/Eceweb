@@ -7,6 +7,7 @@ import About from "../page/About";
 import Home from "../page/Home";
 import Submitpaper from "../page/Submitpaper";
 import Contact from "../page/Contact";
+import Committee from "../page/Committee";
 
 const Router = () => {
   return (
@@ -15,19 +16,17 @@ const Router = () => {
         <Route
           path="/contact"
           element={
-            // <TransitionComponent>
-            //   <Contact />
-            // </TransitionComponent>
-            <Contact />
+            <TransitionComponent>
+              <Contact />
+            </TransitionComponent>
           }
         />
         <Route
-          path="/sumbitpaper"
+          path="/submitpaper"
           element={
-            // <TransitionComponent>
-            //   <Submitpaper />
-            // </TransitionComponent>
-            <Submitpaper />
+            <TransitionComponent>
+              <Submitpaper />
+            </TransitionComponent>
           }
         />
         <Route
@@ -43,6 +42,14 @@ const Router = () => {
           element={
             <TransitionComponent>
               <Home />
+            </TransitionComponent>
+          }
+        />
+        <Route
+          path="/committee"
+          element={
+            <TransitionComponent>
+              <Committee />
             </TransitionComponent>
           }
         />

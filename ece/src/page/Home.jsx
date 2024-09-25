@@ -439,6 +439,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import PhotoGallery from "../components/PhotoGallery";
 import TransitionContext from "../context/TransitionContext";
+import Heading from "../components/Heading";
 // import Footer from "../components/Footer";
 
 export default function Home() {
@@ -503,6 +504,7 @@ export default function Home() {
   return (
     <>
       <main ref={main}>
+        <Heading className="z-20 top-0" />
         <div
           id="carouselExampleAutoplaying"
           className="carousel slide  h-screen  z-[0] "
