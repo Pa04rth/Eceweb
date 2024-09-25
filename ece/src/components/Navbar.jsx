@@ -157,11 +157,19 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
+                  onClick={() => {
+                    if (window.location.pathname === "/") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/";
+                    }
+                  }}
                   className="text-white hover:text-yellow-300 font-custom transition duration-300"
                 >
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link
                   to="/submitpaper"
@@ -172,18 +180,28 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/committee"
                   className="text-white hover:text-yellow-300 transition duration-300"
                 >
-                  About
+                  Committee
                 </Link>
               </li>
+
               <li>
                 <Link
                   to="/contact"
                   className="text-white hover:text-yellow-300 transition duration-300"
                 >
                   Contact Us
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/about"
+                  className="text-white hover:text-yellow-300 transition duration-300"
+                >
+                  About
                 </Link>
               </li>
             </ul>
