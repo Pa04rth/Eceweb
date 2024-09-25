@@ -507,7 +507,7 @@ export default function Home() {
           id="carouselExampleAutoplaying"
           className="carousel slide  h-screen  z-[0] "
           data-bs-ride="carousel"
-          data-bs-interval="500"
+          data-bs-interval="1000"
         >
           <div className="carousel-inner ">
             <div className="carousel-item active">
@@ -890,9 +890,9 @@ export default function Home() {
         </section>
 
         {/* SECTION 4 */}
-        <section className="panel light">
+        {/* <section className="panel light">
           <div className="w-full h-full flex flex-col mt-16 ">
-            {/* SHAPE DIVIDER */}
+            {/* SHAPE DIVIDER 
             <div className="custom-shape-divider-top-1727061075 absolute top-0 left-0 w-full overflow-hidden leading-none">
               <svg
                 data-name="Layer 1"
@@ -921,7 +921,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <PhotoGallery />
 
