@@ -12,7 +12,7 @@ const Spinner = () => {
     // Set an interval to cycle through logos
     const intervalId = setInterval(() => {
       setCurrentLogoIndex((prevIndex) => (prevIndex + 1) % logos.length);
-    }, 500); // Change logo every 1 seconds
+    }, 1000); // Change logo every 1 seconds
 
     // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
