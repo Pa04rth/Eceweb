@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -69,16 +70,88 @@ const Footer = () => {
                 Quick Links
               </h1>
               <span className="relative inline-block  left-0 bottom-0 w-28 h-1 bg-red-900"></span>
-              <h1 className="text-left mt-4 text-gray-400">Home</h1>
-              <h1 className="text-left mt-4 text-gray-400">About us</h1>
-              <h1 className="text-left mt-4 text-gray-400">Submit Paper</h1>
-              <h1 className="text-left mt-4 text-gray-400">Commitee</h1>
+              <h1 className="text-left mt-4 text-gray-400">
+                <Link
+                  to="/"
+                  onClick={() => {
+                    if (window.location.pathname === "/") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/";
+                    }
+                  }}
+                  className="text-white hover:text-yellow-300 font-custom transition duration-300"
+                >
+                  Home
+                </Link>
+              </h1>
+              <h1 className="text-left mt-4 text-gray-400">
+                <Link
+                  to="/about"
+                  onClick={() => {
+                    if (window.location.pathname === "/about") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/about";
+                    }
+                  }}
+                  className="text-white hover:text-yellow-300 transition duration-300"
+                >
+                  About
+                </Link>
+              </h1>
+              <h1 className="text-left mt-4 text-gray-400">
+                <Link
+                  to="/submitpaper"
+                  onClick={() => {
+                    if (window.location.pathname === "/submitpaper") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/submitpaper";
+                    }
+                  }}
+                  className="text-white hover:text-yellow-300 font-custom transition duration-300"
+                >
+                  Submit Paper
+                </Link>
+              </h1>
+              <h1 className="text-left mt-4 text-gray-400">
+                <Link
+                  to="/committee"
+                  onClick={() => {
+                    if (window.location.pathname === "/committee") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/committee";
+                    }
+                  }}
+                  className="text-white hover:text-yellow-300 transition duration-300"
+                >
+                  Committee
+                </Link>
+              </h1>
             </div>
             <div className="px-16 h-full ">
               <h1 className=" text-xl font-bold mt-2 font-custom">Support</h1>
               <span className="relative inline-block  left-0 bottom-0 w-28 h-1 bg-red-900"></span>
-              <h1 className="text-left mt-4 text-gray-400">knit.ac.in</h1>
-              <h1 className="text-left mt-4 text-gray-400">Contact us</h1>
+              <h1 className="text-left mt-4 text-white">
+                <a href="https://knit.ac.in/">Knit.ac.in</a>
+              </h1>
+              <h1 className="text-left mt-4 text-gray-400">
+                <Link
+                  to="/contact"
+                  onClick={() => {
+                    if (window.location.pathname === "/contact") {
+                      window.location.reload();
+                    } else {
+                      window.location.href = "/contact";
+                    }
+                  }}
+                  className="text-white hover:text-yellow-300 transition duration-300"
+                >
+                  Contact Us
+                </Link>
+              </h1>
             </div>
             <div className="px-16  h-full  ">
               <h1 className=" text-xl font-bold mt-2 font-custom">Policies</h1>
