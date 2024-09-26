@@ -598,8 +598,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-12 w-12 rounded-full border-2 border-black"
+                      src="./profile.png"
                       alt="Profile Photo"
                     />
                   </div>
@@ -667,8 +667,8 @@ export default function Home() {
                 <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
                   <div class="shrink-0">
                     <img
-                      class="h-12 w-12 rounded-full"
-                      src="..."
+                      class="h-12 w-12 rounded-full border-2 border-black"
+                      src="./profile.png"
                       alt="Profile Photo"
                     />
                   </div>
@@ -775,13 +775,14 @@ export default function Home() {
               <h1 className="text-black  font-bold text-4xl font-custom ">
                 ABOUT THE CONFERENCE
               </h1>
+              <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
             </div>
             <div className="flex felx-row  flex-grow ">
               <div className="h-full  w-2/3 items-center justify-center text-center  ">
-                <h1 className="font-bold">DATA</h1>
+                <h1 className="font-bold"></h1>
               </div>
               <div>
-                <h1>hiiiii</h1>
+                <h1></h1>
               </div>
             </div>
           </div>
@@ -790,7 +791,7 @@ export default function Home() {
         {/* SECTION 3 */}
 
         <section className="panel light">
-          <div className="w-full h-full flex flex-col mt-16 ">
+          <div className="w-full h-full flex flex-col  bg-white ">
             {/* SHAPE DIVIDER */}
             <div className="custom-shape-divider-top-1727061075 absolute top-0 left-0 w-full overflow-hidden leading-none">
               <svg
@@ -806,7 +807,7 @@ export default function Home() {
                 ></path>
               </svg>
             </div>
-            <div>
+            <div className="mt-10">
               <h1 className="text-black   text-4xl font-bold ">
                 PAPER SUBMISSION
               </h1>

@@ -393,7 +393,7 @@ import Footer from "../components/Footer";
 
 function Committee() {
   return (
-    <div className="bg-white">
+    <div className="min-h-screen relative bg-gradient-to-b from-blue-100 to-white">
       <div className=" relative w-full z-15 h-60 bg-[url('./banner.png')]"></div>
       <div className="text-black w-full mt-4 pl-36 text-4xl font-bold font-custom   bg-white ">
         <h1>CO-CONVENORS:</h1>
@@ -1242,8 +1242,6 @@ function Committee() {
 
       {/* </div> 
  </div> */}
-
-      <Footer className="mt-10" />
     </div>
   );
 }
