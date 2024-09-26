@@ -10,83 +10,191 @@ const SubmitPaper = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative bg-gradient-to-b from-blue-100 to-white">
+    <div className="h-full w-full  bg-gradient-to-b from-blue-100 to-white">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="container mx-auto px-4 py-8"
+        className="container mx-auto   px-4 py-2"
       >
-        <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
+        {/* <div className="bg-white rounded-lg shadow-2xl overflow-hidden"> */}
+        {/* <div>
           <div
             className="bg-cover bg-center h-64 flex items-center justify-center"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80')",
+              backgroundImage: "url('./banner.png')",
             }}
+          > */}
+        <div className=" bg-[url('./banner.png')] w-full rounded-lg  h-60 flex items-center justify-center"></div>
+
+        <div className="py-2 w-full ">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white rounded-lg p-6 mb-6 w-full "
           >
-            <div className="bg-black bg-opacity-50 w-full h-full flex items-center justify-center">
-              <div className="text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-                  Submit Paper Submission
-                </h1>
-                <p className="text-xl text-white">
-                  Share your groundbreaking ideas with the world
-                </p>
-              </div>
-            </div>
-          </div>
+            <h1 className="text-black font-bold text-3xl">CALL FOR PAPER:</h1>
+            <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Wireless Sensor Networks, Advances in Sensor Technology</li>
+              <li>
+                Nanotechnology and Sensor Based Solutions for
+                Environment-Friendly Agriculture
+              </li>
+              <li>Green Technology and Rural Environmental Concerns</li>
+              <li>Technology in Agriculture for Sustainable Development</li>
+              <li>Optical and Wireless Communications</li>
+              <li>VLSI for the Social Change Digital Manufacturing</li>
+              <li>Consumer Technology</li>
+              <li>
+                Signal Processing, LORA Functioning in Industrial Environment
+              </li>
+              <li>Mobile HMI for Electronic Product</li>
+              <li>Nanotechnology Based Human-Centered Designs</li>
+              <li>Internet of Vehicles</li>
+              <li>
+                Control, Communication and Automation Enabled Technologies
+              </li>
+              <li>Mechatronics and Robotics Technologies</li>
+              <li>
+                Blockchain, Inter-Vehicle Wireless Communications Technologies
+              </li>
+              <li>Electric and Hybrid-Electric Vehicles</li>
+              <li>Nano-Fluids Dynamics for Industrial Applications</li>
+              <li>Renewable and Sustainable Energy Solutions</li>
+              <li>
+                Smart Grid, Electric Vehicle, Battery Management System, Grid
+                integration with RES
+              </li>
+              <li>Electric actuators, Servo drives, and IoT interfaces</li>
+              <li>Machine Vibration & Condition Monitoring</li>
+              <li>
+                Signal Processing for Machine Health Monitoring and RFID 3D
+                Scanning
+              </li>
+              <li>
+                Image Processing and Computational Intelligence in Agriculture
+              </li>
+              <li>Biotechnology Solutions for Sustainable Agriculture</li>
+              <li>
+                Applications of Image and Video Processing for Industrial
+                Application
+              </li>
+              <li>
+                Machine Learning & AI Approaches to Manufacturing Applications
+              </li>
+              <li>High-Performance Computing, Cloud Computing</li>
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white rounded-lg p-6 mb-6 w-full "
+          >
+            <h1 className="text-black font-bold text-3xl">
+              REGISTRATION DETAILS:
+            </h1>
+            <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
+            <table class="min-w-full bg-white border text-black text-center border-gray-300">
+              <thead>
+                <tr class="bg-yellow-300 text-gray-700">
+                  <th class="py-3 px-6 text-2xl border-b-2 border-gray-300">
+                    Category of Delegates
+                  </th>
+                  <th class="py-3 px-6 border-b-2 text-2xl border-gray-300">
+                    India (in INR)
+                  </th>
+                  <th class="py-3 px-6 border-b-2 text-2xl border-gray-300">
+                    Foreign (in USD)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-gray-50">
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    Professionals
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    3500
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    60
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    Faculty Members
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    3000
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    50
+                  </td>
+                </tr>
+                <tr class="bg-gray-50">
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    Research Scholars
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    2000
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    20
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    PG/ UG Student
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    1000
+                  </td>
+                  <td class="py-3 px-6 text-center border-b border-gray-300">
+                    15
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <h1 className="text-black mt-4 font-bold">
+              <span className="text-red-900">ACCOMODATION:</span> Paid
+              accommodation to the participants will be provided at institute
+              Guest House / Hostels on request.
+            </h1>
+          </motion.div>
 
-          <div className="p-8">
+          {isLoaded ? (
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-100 rounded-lg p-6 mb-8"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                Submission Guidelines
-              </h2>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Ensure your paper adheres to the specified format</li>
-                <li>Include all necessary citations and references</li>
-                <li>Proofread your work before submission</li>
-                <li>Submit only original and unpublished research</li>
-              </ul>
+              <h1 className="text-black font-bold text-3xl">REGISTRATION:</h1>
+              <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
+              <h1 className="text-black">
+                Submit your form
+                <a href="https://forms.gle/ydmqtPzX3g6LHNqa8"> here .</a>
+              </h1>
             </motion.div>
-
-            {isLoaded ? (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLScYs9tQRjRmzHc9l2TglYIEP2dEKCgPQ_6eYvS0kxI_cEqsBA/viewform?embedded=true"
-                  width="640"
-                  height="705"
-                  frameborder="0"
-                  marginheight="0"
-                  marginwidth="0"
-                >
-                  Loading…
-                </iframe>
-              </motion.div>
-            ) : (
-              <div className="flex justify-center items-center h-64">
-                <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
-              </div>
-            )}
-          </div>
-
-          <div className="bg-gray-100 p-6 mt-8">
-            <p className="text-center text-gray-600">
-              Thank you for contributing to the advancement of knowledge in our
-              field. Your submission is greatly appreciated!
-            </p>
-          </div>
+          ) : (
+            <div className="flex justify-center items-center h-64">
+              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
+            </div>
+          )}
         </div>
+
+        <div className="bg-gray-100 p-6 mt-8">
+          <p className="text-center text-gray-600">
+            Thank you for contributing to the advancement of knowledge in our
+            field. Your submission is greatly appreciated!
+          </p>
+        </div>
+        {/* </div>
+        </div> */}
       </motion.div>
     </div>
   );
