@@ -177,7 +177,10 @@ const SubmitPaper = () => {
               <span className="relative inline-block  left-0 bottom-0 w-72 h-1 bg-red-900"></span>
               <h1 className="text-black">
                 Submit your form
-                <a href="https://forms.gle/ydmqtPzX3g6LHNqa8"> here .</a>
+                <a href="https://forms.gle/ydmqtPzX3g6LHNqa8" target="_blank">
+                  {" "}
+                  here .
+                </a>
               </h1>
             </motion.div>
           ) : (
