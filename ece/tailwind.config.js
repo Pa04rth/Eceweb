@@ -5,6 +5,10 @@ export default {
     extend: {
       fontFamily: {
         custom: ["Titillium Web", "system - ui"], // Define your custom font family
+        roboto: ["Roboto", "sans-serif"],
+      },
+      fontWeight: {
+        normal: 400,
       },
       keyframes: {
         fade: {
