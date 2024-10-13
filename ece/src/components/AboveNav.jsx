@@ -44,11 +44,13 @@ const AboveNav = () => {
               href="https://maps.app.goo.gl/gGQN6tQXQ5YFVtiKA"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline "
+              className="hover:underline font-roboto "
             >
               Kamla Nehru Institute of Technology, Sultanpur
             </a>
-            <p className="text-xs">Sultanpur, Uttar Pradesh 228118</p>
+            <p className="text-xs font-roboto">
+              Sultanpur, Uttar Pradesh 228118
+            </p>
           </div>
         </div>
       </div>

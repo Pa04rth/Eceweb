@@ -3,7 +3,7 @@ import React from "react";
 const Heading = () => {
   return (
     <div className="absolute inset-0 w-8 mx-auto flex items-center justify-center z-10 font-custom">
-      <h1 className="text-6xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-yellow-400 to-red-500 animate-text drop-shadow-[0_5px_15px_rgba(0,0,0,0.6)]">
+      <h1 className="text-6xl text-center font-extrabold  font-roboto text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-yellow-400 to-red-500 animate-text drop-shadow-[0_5px_15px_rgba(0,0,0,0.6)]">
         ICEVET'24 <span className="text-white ">CONFERENCE</span>{" "}
         {/* <hr className="border-4 border-yellow-400 " /> */}
         <div className="flex ml-20 mt-2">

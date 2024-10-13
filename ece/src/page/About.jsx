@@ -85,40 +85,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <MapPin className="mr-3 text-blue-500 w-6 h-6" />
-              <span className="text-gray-700">
-                Sultanpur, Uttar Pradesh, India - 228118
-              </span>
-            </div>
-            <div className="flex items-center">
-              <Phone className="mr-3 text-blue-500 w-6 h-6" />
-              <span className="text-gray-700">+91 5362 240454</span>
-            </div>
-            <div className="flex items-center">
-              <Globe className="mr-3 text-blue-500 w-6 h-6" />
-              <a
-                href="http://www.knit.ac.in"
-                className="text-blue-600 hover:underline"
-              >
-                www.knit.ac.in
-              </a>
-            </div>
-          </div>
-        </div>
       </main>
-
-      <footer className="bg-gray-800 text-white py-6 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm">
-            &copy; 2023 Kamla Nehru Institute of Technology. All rights
-            reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };
