@@ -61,7 +61,7 @@ function Committee() {
                   />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800">
-                  Prof. Preeti Kharwar
+                  Prof. Raj Srivastav
                 </h2>
                 <p className="text-gray-600 text-center mt-2">
                   Professor of Electronics Engineering
@@ -80,7 +80,7 @@ function Committee() {
                   />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-800">
-                  Prof. Gaurav Verma
+                  Prof. Pallavi
                 </h2>
                 <p className="text-gray-600 text-center mt-2">
                   Professor of Electronics Engineering
